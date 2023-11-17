@@ -6,7 +6,7 @@ function App() {
   // console.log(element1);
   const index = 0;
   const element = (
-    <h1 className="heading", indexTab={index}>
+    <h1 className="heading", tabIndex={index}>
       Hello world
     </h1>
   )
