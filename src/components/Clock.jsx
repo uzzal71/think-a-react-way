@@ -4,7 +4,8 @@ class Clock extends React.Component {
     /*
     constructor(props) {
         super(props);
-        this.state = { date: new Date() };
+        this.state = { date: new Date(), locale: new Date() };
+        this.handleClick = this.handleClick.bind(this);
     }
     */
     state = { date: new Date(), locale: 'bn-BD' }
@@ -23,7 +24,7 @@ class Clock extends React.Component {
         });
     }
 
-    handleClick() {
+    handleClick = () => {
         this.setState({
             locale: 'en-US'
         })
