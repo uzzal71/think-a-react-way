@@ -1,8 +1,9 @@
+import BoilingVerdict from "./components/BoilingVerdict";
 
 function App() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <BoilingVerdict celsius={30}/>
     </div>
   );
 }
