@@ -1,9 +1,9 @@
 import React from "react";
 
-function Clock() {
+function Clock({ locale }) {
   return (
     <h1 className="hading">
-      <span>Hello {new Date().toLocaleTimeString()}</span>
+      <span>Hello {new Date().toLocaleTimeString(locale)}</span>
     </h1>
   )
 }
@@ -11,7 +11,7 @@ function Clock() {
 function App() {
   return (
     <div>
-      <Clock/>
+      <Clock locale="bd-BD"/>
     </div>
   );
 }
