@@ -32,7 +32,7 @@ class Clock extends React.Component {
     }
 
     render() {
-        console.log('clock component rendering');
+        // console.log('clock component rendering');
         const { date, locale } = this.state;
         /*
         let button;

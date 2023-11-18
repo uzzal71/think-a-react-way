@@ -9,7 +9,7 @@ class Button extends React.Component {
     }
 
     render() {
-        console.log('button component rendering');
+        // console.log('button component rendering');
         const { change, locale, show, enable } = this.props;
         if (!enable) return null;
         return (
