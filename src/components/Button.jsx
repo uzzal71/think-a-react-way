@@ -2,8 +2,11 @@ import React from 'react';
 
 class Button extends React.Component {
     render() {
+        console.log('button component rendering');
+        const { change } = this.props;
+
         return (
-            <button type='button' onClick={() => this.handleClick('en-US')}>Click here</button>
+            <button type='button' onClick={change}>Click here</button>
         );
     }
 };
