@@ -1,17 +1,19 @@
 import React from "react";
 
-function Clock({ locale }) {
-  return (
-    <h1 className="hading">
-      <span>Hello {new Date().toLocaleTimeString(locale)}</span>
-    </h1>
-  )
+class Clock extends React.Component {
+  render () {
+    return (
+      <h1 className="hading">
+        <span>Hello {this.props.children} {new Date().toLocaleTimeString(this.props.locale)}</span>
+      </h1>
+    )
+  }
 }
 
 function App() {
   return (
     <div>
-      <Clock locale="bd-BD"/>
+      <Clock locale="bn-BD">World</Clock>
     </div>
   );
 }
