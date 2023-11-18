@@ -1,57 +1,6 @@
 import React from "react";
 
 function App() {
-  // const element = React.createElement('h1', {className: 'heading'}, 'hello world');
-  // const element1 = <h1>Hello world</h1>;
-  // console.log(element1);
-  // const index = 0;
-  // const element = (
-  //   <h1 className="heading", tabIndex={index}>
-  //     Hello world
-  //   </h1>
-  // )
-  /*
-  element = {
-    type: 'h1',
-    props: {
-      className: 'heading',
-      tabIndex: 0,
-      children: 'hellow world'
-    }
-  }
-  */
-//  console.log(element)
-const index = 0;
-const element = (
-  <h1 className="heading", tabIndex={index}>
-    <span className="text">Hello world</span>
-    <img src=""/>
-  </h1>
-);
-  /*
-  element = {
-    type: 'h1',
-    props: {
-      className: 'heading',
-      tabIndex: 0,
-      children: [
-        {
-          type: 'span',
-          props: {
-            className: 'text'
-          },
-          {
-            type: 'img',
-            props: {
-              src: ''
-            }
-          }
-        }
-      ]
-    }
-  }
-  */
-  console.log(element)
   return (
     <div>
       <h1>Hello world</h1>
