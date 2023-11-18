@@ -13,7 +13,9 @@ class Button extends React.Component {
         const { change, locale } = this.props;
 
         return (
-            <button type='button' onClick={() => change(locale)}>Click here</button>
+            <button type='button' onClick={() => change(locale)}>
+                { locale === "bn-BD" ? "Bangal" : "English" }
+            </button>
         );
     }
 };
