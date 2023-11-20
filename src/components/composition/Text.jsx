@@ -1,9 +1,17 @@
-const Text = ({ addEmoji }) => {
-    const text = 'I am JavaScript Programming Language.';
+const Text = ({ addEmoji, addBracket }) => {
+    let text = 'I am JavaScript Programming Language.';
+
+    // {addEmoji ? addEmoji(text, '🏩') : text}
+    if (addEmoji) {
+        text = addEmoji(text, '🏩');
+    }
+    if (addBracket) {
+        text = addBracket(text)
+    }
 
     return (
         <div>
-            {addEmoji ? addEmoji(text, '🏩') : text}
+            {text}
         </div>
     );
 };
