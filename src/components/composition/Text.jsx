@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Text = ({ addEmoji }) => {
     const text = 'I am JavaScript Programming Language.';
 

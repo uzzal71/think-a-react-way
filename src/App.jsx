@@ -1,9 +1,10 @@
-import Text from "./components/inheritance/Text";
+import Emoji from "./components/composition/Emoji";
+import Text from "./components/composition/Text";
 
 function App() {
   return (
     <div>
-      <Text/>
+      <Emoji><Text/></Emoji>
     </div>
   );
 }
