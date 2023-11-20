@@ -1,9 +1,9 @@
-import Emoji from "./components/inheritance/Emoji";
+import Text from "./components/inheritance/Text";
 
 function App() {
   return (
     <div>
-      <Emoji/>
+      <Text/>
     </div>
   );
 }
