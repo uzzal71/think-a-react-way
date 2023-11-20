@@ -9,7 +9,7 @@ export default class Calculator extends React.Component {
         scale: 'c',
     };
 
-    onTemperatureChange = (e, scale) => {
+    handleChange = (e, scale) => {
         this.setState({
             temperature: e.target.value,
             scale: scale
@@ -23,8 +23,8 @@ export default class Calculator extends React.Component {
 
         return(
             <div>
-                <TemperatureInput scale='c' temperature={celsius} onTemperatureChange={this.onTemperatureChange}/>
-                <TemperatureInput scale='f' temperature={fahrenheit} onTemperatureChange={this.onTemperatureChange}/>
+                <TemperatureInput scale='c' temperature={celsius} onTemperatureChange={this.handleChange}/>
+                <TemperatureInput scale='f' temperature={fahrenheit} onTemperatureChange={this.handleChange}/>
                 <BoilingVerdict celsius={parseFloat(celsius)} />
             </div>
         );
