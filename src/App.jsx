@@ -1,7 +1,9 @@
+import Emoji from "./components/inheritance/Emoji";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Emoji/>
     </div>
   );
 }
