@@ -4,7 +4,11 @@ import Text from "./components/composition/Text";
 function App() {
   return (
     <div>
-      <Emoji><Text/></Emoji>
+      <Emoji>
+        {
+          ({addEmoji}) => <Text addEmoji={addEmoji}/>
+        }
+      </Emoji>
     </div>
   );
 }
