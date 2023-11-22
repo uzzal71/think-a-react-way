@@ -4,11 +4,13 @@ class ClickCounter extends React.Component {
     state = {
         count: 0,
     };
-    
+
     render() {
+        const { count } = this.state;
+
         return(
             <div>
-                <button type="button">Clicked X Times</button>
+                <button type="button">Clicked { count } times</button>
             </div>
         );
     }
