@@ -9,3 +9,5 @@ class ClickCounter extends React.Component {
         );
     }
 }
+
+export default ClickCounter;

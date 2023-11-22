@@ -1,7 +1,9 @@
+import ClickCounter from "./components/counter/ClickCounter";
+
 function App() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <ClickCounter/>
     </div>
   );
 }
