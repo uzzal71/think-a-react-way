@@ -4,6 +4,7 @@ function App() {
   return (
     <div>
       <ClickCounter/>
+      <div>wel</div>
     </div>
   );
 }
