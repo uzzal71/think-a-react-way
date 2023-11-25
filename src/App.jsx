@@ -5,7 +5,6 @@ function App() {
     <div>
       <ClickCounter/>
       <h1>Welcome counter</h1>
-      <p>hello</p>
     </div>
   );
 }
