@@ -4,7 +4,6 @@ function App() {
   return (
     <div>
       <ClickCounter/>
-      <h1>Welcome counter</h1>
     </div>
   );
 }
