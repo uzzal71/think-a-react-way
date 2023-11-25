@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <ClickCounter/>
-      <h1>Welcome</h1>
+      <h1>Welcome counter</h1>
     </div>
   );
 }
