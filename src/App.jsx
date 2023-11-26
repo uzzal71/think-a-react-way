@@ -1,11 +1,11 @@
-import ClickCounter from "./components/counter/ClickCounter";
-import HoverCounter from "./components/counter/HoverCounter";
+import PostLike from "./components/counter/PostLike";
+import WriterLike from "./components/counter/WriterLike";
 
 function App() {
   return (
     <div>
-      <ClickCounter/>
-      <HoverCounter/>
+      <PostLike/>
+      <WriterLike/>
     </div>
   );
 }
