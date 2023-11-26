@@ -1,13 +1,12 @@
 import ClickCounter from "./components/counter/ClickCounter";
-import User from "./components/counter/HOC/User";
+import Counter from "./components/counter/Counter";
 import HoverCounter from "./components/counter/HoverCounter";
 
 function App() {
   return (
     <div>
-      <ClickCounter/>
-      <HoverCounter/>
-      <User render={(isLoggedIn) => isLoggedIn ? "Uzzal Kumar Roy" : "Guest"}/>
+      <Counter render={(counter, incrementCount) => <ClickCounter counter={counter} incrementCount={incrementCount}/>}/>
+      <Counter render={(counter, incrementCount) => <HoverCounter counter={counter} incrementCount={incrementCount}/>}/>
     </div>
   );
 }
