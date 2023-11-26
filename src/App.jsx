@@ -7,7 +7,7 @@ function App() {
     <div>
       <ClickCounter/>
       <HoverCounter/>
-      <User name={() => "Uzzal Kumar Roy"}/>
+      <User name={(isLoggedIn) => isLoggedIn ? "Uzzal Kumar Roy" : "Guest"}/>
     </div>
   );
 }
