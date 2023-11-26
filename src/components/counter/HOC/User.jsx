@@ -1,5 +1,5 @@
-const User = ({ name }) => {
-    return name(false);
+const User = ({ render }) => {
+    return render(false);
 };
 
 export default User;
