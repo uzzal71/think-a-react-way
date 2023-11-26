@@ -1,11 +1,11 @@
 import React from 'react';
 import Content from './Content';
 
-const Section = () => {
+const Section = ({ theme }) => {
     return (
         <div>
             <h1>This is a section</h1>
-            <Content/>
+            <Content theme={theme}/>
         </div>
     );
 };

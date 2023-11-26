@@ -9,12 +9,14 @@ class App extends React.Component {
   };
 
   render() {
+    const { theme } = this.state;
+
     return (
       <div>
         <Counter>
         {(counter, incrementCount) => <ClickCounter counter={counter} incrementCount={incrementCount}/>}
         </Counter>
-        <Section/>
+        <Section theme={theme}/>
       </div>
     );
   }

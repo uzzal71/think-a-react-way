@@ -2,13 +2,13 @@ import React from 'react';
 import Counter from './counter/Counter';
 import HoverCounter from './counter/HoverCounter';
 
-const Content = () => {
+const Content = ({theme}) => {
     return (
         <div>
             <h1>This is a content</h1>
             <Counter>
                 {(counter, incrementCount) => (
-                    <HoverCounter counter={counter} incrementCount={incrementCount}/>
+                    <HoverCounter counter={counter} incrementCount={incrementCount} theme={theme}/>
                 )}
             </Counter>
         </div>
