@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./components/Section";
 import ClickCounter from "./components/counterRenderProps/ClickCounter";
 import Counter from "./components/counterRenderProps/Counter";
+import ThemeContext from "./contexts/themeContext";
 
 class App extends React.Component {
   state = {
@@ -14,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Counter render={(counter, incrementCounter) => <ClickCounter counter={counter} incrementCounter={incrementCounter}/>}/>
-        <Provider value={}><Section theme={theme}/></Provider>
+        <ThemeContext.Provider value={{ theme: theme }}><Section /></ThemeContext.Provider>
       </div>
     );
   }
