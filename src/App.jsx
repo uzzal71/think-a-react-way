@@ -1,7 +1,11 @@
+import ClickCounter from "./components/counterHoc/ClickCounter";
+import HoverCounter from "./components/counterHoc/HoverCounter";
+
 function App() {
     return (
       <div>
-        <h1>HOC</h1>
+        <ClickCounter/>
+        <HoverCounter/>
       </div>
     );
 }
