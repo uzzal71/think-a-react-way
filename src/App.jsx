@@ -6,23 +6,20 @@ import ThemeContext from "./contexts/themeContext";
 
 class App extends React.Component {
   state = {
-    theme: 'dark'
+    theme: 'dark',
+    switchTheme: () => {
+      this.setState(({ theme })=> {
+        if (theme === 'dark') return {theme: 'light'}
+        else return {theme: 'dark'}
+      })
+    }
   };
 
-  switchTheme = (key) => {
-    this.setState(({ theme })=> {
-      if (theme === 'dark') return {theme: 'light'}
-      else return {theme: 'dark'}
-    })
-  }
-
   render() {
-    const { theme } = this.state;
-
     return (
       <div>
         <Counter render={(counter, incrementCounter) => <ClickCounter counter={counter} incrementCounter={incrementCounter}/>}/>
-        <ThemeContext.Provider value={{ theme: theme, switchTheme: this.switchTheme }}><Section /></ThemeContext.Provider>
+        <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider>
       </div>
     );
   }
