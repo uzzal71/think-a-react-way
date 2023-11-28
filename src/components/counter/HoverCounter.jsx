@@ -2,6 +2,7 @@ import React from 'react';
 
 const HoverCounter = ({ counter, incrementCount, theme, switchTheme } ) => {
     const style = theme === 'dark' ? {backgroundColor: '#000', color: '#fff'} : null;
+    console.log('HoverCounter rendered');
 
     return (
         <div>

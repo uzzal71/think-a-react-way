@@ -7,6 +7,8 @@ const Content = () => {
     const context = useContext(ThemeContext);
     const {theme, switchTheme} = context;
     
+    console.log('Content rendered');
+
     return (
         <div>
             <h1>This is a content</h1>
