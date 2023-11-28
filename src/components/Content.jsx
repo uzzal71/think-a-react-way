@@ -9,7 +9,7 @@ const Content = () => {
             <h1>This is a content</h1>
             <Counter>
                 {(counter, incrementCount) => {
-                    return <ThemeContext.Consumer>{({theme}) => <HoverCounter counter={counter} incrementCount={incrementCount} theme={theme}/>}</ThemeContext.Consumer>
+                    return <ThemeContext.Consumer>{({theme, switchTheme}) => <HoverCounter counter={counter} incrementCount={incrementCount} theme={theme} switchTheme={switchTheme}/>}</ThemeContext.Consumer>
                 }}
             </Counter>
         </div>

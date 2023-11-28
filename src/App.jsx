@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <div>
         <Counter render={(counter, incrementCounter) => <ClickCounter counter={counter} incrementCounter={incrementCounter}/>}/>
-        <ThemeContext.Provider value={{ theme: theme }}><Section /></ThemeContext.Provider>
+        <ThemeContext.Provider value={{ theme: theme, switchTheme: this.switchTheme }}><Section /></ThemeContext.Provider>
       </div>
     );
   }
