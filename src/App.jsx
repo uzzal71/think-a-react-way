@@ -9,6 +9,13 @@ class App extends React.Component {
     theme: 'dark'
   };
 
+  switchTheme = (key) => {
+    this.setState(({ theme })=> {
+      if (theme === 'dark') return {theme: 'light'}
+      else return {theme: 'dark'}
+    })
+  }
+
   render() {
     const { theme } = this.state;
 
