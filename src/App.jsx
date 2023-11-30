@@ -1,6 +1,10 @@
+import TodoClass from "./components/useState/TodoClass";
+
 const App = () => {
   return (
-    <h1>Hello world!</h1>
+    <div>
+      <TodoClass/>
+    </div>
   );
 }
 

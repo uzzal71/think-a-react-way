@@ -22,7 +22,14 @@ export default class TodoClass extends Component {
         const { todo, waring } = this.state;
 
         return (
-            <div>TodoClass</div>
+            <div>
+                <p>{todo}</p>
+                <p>
+                    <textarea name='todo' value={todo} onChange={this.handleInput}/>
+                </p>
+                <br/>
+                <h2>{waring || 'Good choice!'}</h2>
+            </div>
         )
     }
 }
