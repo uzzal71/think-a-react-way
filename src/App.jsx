@@ -1,9 +1,9 @@
-import TodoClass from "./components/useState/TodoClass";
+import Todo from "./components/useState/Todo";
 
 const App = () => {
   return (
     <div>
-      <TodoClass/>
+      <Todo/>
     </div>
   );
 }
