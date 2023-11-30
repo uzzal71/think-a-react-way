@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class TodoClass extends Component {
     state = {
         todo: '',
-        waring: null,
+        warning: null,
     };
 
     handleInput = (e) => {
@@ -19,7 +19,7 @@ export default class TodoClass extends Component {
     };
     
     render() {
-        const { todo, waring } = this.state;
+        const { todo, warning } = this.state;
 
         return (
             <div>
@@ -28,7 +28,7 @@ export default class TodoClass extends Component {
                     <textarea name='todo' value={todo} onChange={this.handleInput}/>
                 </p>
                 <br/>
-                <h2>{waring || 'Good choice!'}</h2>
+                <h2>{warning || 'Good choice!'}</h2>
             </div>
         )
     }
