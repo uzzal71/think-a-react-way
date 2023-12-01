@@ -1,6 +1,10 @@
-import React from 'react';
+import { useEffect } from 'react';
 
 const Form = () => {
+    useEffect(() => {
+        // component did load
+    }, []);
+    
     return (
         <div>
             <p>
