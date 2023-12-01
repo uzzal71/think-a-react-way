@@ -6,7 +6,7 @@ const MyComponent = () => {
     const [date, setDate] = useState(new Date());
 
     const tick = () => {
-        setCount(new Date());
+        setDate(new Date());
     }
 
     useEffect(() => {
@@ -14,13 +14,18 @@ const MyComponent = () => {
         document.title = `Clicked ${count} times`;
     }, [count]);
 
+    useEffect(() => {
+        console.log('starting timer');
+        setInterval(tick, 1000);
+    }, []);
+
     const addClick = () => {
         setCount((prevCount) => prevCount + 1);
     }
 
     return (
         <div>
-            <p>Time: {date.toLocaleDateString()}</p>
+            <p>Time: {date.toLocaleTimeString()}</p>
             <p>
                 <input type='text' name='text' value={text} onChange={(e) => setText(e.target.value)}/>
             </p>
