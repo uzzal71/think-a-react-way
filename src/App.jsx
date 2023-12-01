@@ -1,9 +1,9 @@
-import Todo from "./components/useState/Todo";
+import NewTodo from "./components/useState/NewTodo";
 
 const App = () => {
   return (
     <div>
-      <Todo/>
+      <NewTodo/>
     </div>
   );
 }
