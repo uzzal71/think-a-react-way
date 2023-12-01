@@ -6,6 +6,7 @@ const MyComponent = () => {
     const [date, setDate] = useState(new Date());
 
     const tick = () => {
+        console.log('clock ticking!');
         setDate(new Date());
     }
 
@@ -16,7 +17,13 @@ const MyComponent = () => {
 
     useEffect(() => {
         console.log('starting timer');
-        setInterval(tick, 1000);
+        const interval = setInterval(tick, 1000);
+
+        // do this cleanup - stop the timer
+        return () => {
+            console.log('component unmounted');
+            clearInterval(interval);
+        }
     }, []);
 
     const addClick = () => {
