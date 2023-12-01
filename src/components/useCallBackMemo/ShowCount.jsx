@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShowCount = ({count, title}) => {
     console.log(`rendering ${title}...`);
-    
+
     return (
         <div>
             {title} is {count}
@@ -10,4 +10,4 @@ const ShowCount = ({count, title}) => {
     );
 };
 
-export default ShowCount;
+export default React.memo(ShowCount);
