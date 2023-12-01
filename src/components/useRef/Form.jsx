@@ -5,6 +5,7 @@ const Form = () => {
 
     useEffect(() => {
         // component did load
+        inputRef.current.focus();
     }, []);
 
     return (
