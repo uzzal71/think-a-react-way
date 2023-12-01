@@ -1,9 +1,9 @@
-import NewTodo from "./components/useState/NewTodo";
+import Counter from "./components/useState/Counter";
 
 const App = () => {
   return (
     <div>
-      <NewTodo/>
+      <Counter/>
     </div>
   );
 }
