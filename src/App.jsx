@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import Button from "./components/useCallBackMemo/Button";
 import ShowCount from "./components/useCallBackMemo/ShowCount";
 import Title from "./components/useCallBackMemo/Title";
@@ -15,11 +15,11 @@ const App = () => {
     setCount2((prevCount) => prevCount + 5);
   }, []);
 
-  const isEventOrOdd = () => {
+  const isEventOrOdd = useMemo(() => {
     let i = 0;
     while(i < 1000000000) i += 1; // costly operation
     return count1 % 2 === 0;
-  }
+  }, [count1]);
 
   return (
     <div className="app">
