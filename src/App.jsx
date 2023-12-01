@@ -20,7 +20,7 @@ const App = () => {
       <Title/>
       <ShowCount count={count1} title="Counter 1"/>
       <Button handleClick={incrementByOne}>Increment by one</Button>
-      <br/>
+      <hr/>
       <ShowCount count={count2} title="Counter 2"/>
       <Button handleClick={incrementByFive}>Increment by five</Button>
     </div>
