@@ -1,9 +1,7 @@
-import Counter from "./components/useState/Counter";
-
 const App = () => {
   return (
-    <div>
-      <Counter/>
+    <div className="app">
+      <div>We shall learn useEffect() today</div>
     </div>
   );
 }
