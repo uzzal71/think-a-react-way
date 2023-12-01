@@ -6,19 +6,36 @@ class MyComponentClass extends React.Component {
         date: new Date(),
     };
 
-    add = () => {
+    componentDidMount() {
+        const { count } = this.state;
+        document.title = `Clicked ${count} times`;
+        setInterval(this.tick, 1000);
+    }
+
+    componentDidUpdate() {
+        const { count } = this.state;
+        document.title = `Clicked ${count} times`
+    }
+
+    addClick = () => {
         this.setState(({ count }) => ({
             count: count + 1,
         }))
     };
 
+    tick = () => {
+        this.setState({
+            date: new Date(),
+        })
+    }
+
     render() {
-        const { data } = this.state
+        const { date } = this.state
         return (
             <div>
-                <p>Time: {date.toLocalTimeString()}</p>
+                <p>Time: {date.toLocaleTimeString()}</p>
                 <p>
-                    <button type='button'>Click</button>
+                    <button type='button' onClick={this.addClick}>Click</button>
                 </p>
             </div>
         )
