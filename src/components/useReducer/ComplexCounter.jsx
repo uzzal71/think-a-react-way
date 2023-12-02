@@ -27,16 +27,12 @@ const ComplexCounter = () => {
             <div>
                 <div>Count 1 - {count.counter}</div>
                 <button type="button" onClick={() => dispatch({ type: 'increment', value: 1 })}>Increment</button>
-                {/* <button type="button" onClick={() => dispatch({ type: 'increment', value: 5 })}>Increment by five</button> */}
                 <button type="button" onClick={() => dispatch({ type: 'decrement', value: 1 })}>Decrement</button>
-                {/* <button type="button" onClick={() => dispatch({ type: 'decrement', value: 5 })}>Decrement by five</button> */}
             </div>
             <div>
                 <div>Count 2 - {count.counter2}</div>
                 <button type="button" onClick={() => dispatch({ type: 'increment2', value: 1 })}>Increment2</button>
-                {/* <button type="button" onClick={() => dispatch({ type: 'increment', value: 5 })}>Increment by five</button> */}
                 <button type="button" onClick={() => dispatch({ type: 'decrement2', value: 1 })}>Decrement2</button>
-                {/* <button type="button" onClick={() => dispatch({ type: 'decrement', value: 5 })}>Decrement by five</button> */}
             </div>
         </section>
     );
