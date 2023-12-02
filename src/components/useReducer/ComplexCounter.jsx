@@ -29,6 +29,7 @@ const ComplexCounter = () => {
                 <button type="button" onClick={() => dispatch({ type: 'increment', value: 1 })}>Increment</button>
                 <button type="button" onClick={() => dispatch({ type: 'decrement', value: 1 })}>Decrement</button>
             </div>
+            <hr/>
             <div>
                 <div>Count 2 - {count.counter2}</div>
                 <button type="button" onClick={() => dispatch({ type: 'increment2', value: 1 })}>Increment2</button>
