@@ -1,11 +1,9 @@
-import Form from "./components/useRef/Form";
-import Time from "./components/useRef/Time";
+import Counter from "./components/useReducer/Counter";
 
 const App = () => {
   return (
     <div className="app">
-      <Form/>
-      <Time/>
+      <Counter/>
     </div>
   );
 }
